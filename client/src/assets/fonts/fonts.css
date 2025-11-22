@@ -1,0 +1,13 @@
+@font-face {
+  font-family: 'Priestacy';
+  src: url('./Priestacy.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Rosehot';
+  src: url('./rosehot-free-version.regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
