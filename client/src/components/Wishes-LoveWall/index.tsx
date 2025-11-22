@@ -179,7 +179,7 @@ interface WellWishesSectionProps {
     apiBaseUrl?: string;
 }
 
-export default function WellWishesSection({ apiBaseUrl = "http://localhost:3000" }: WellWishesSectionProps) {
+export default function WellWishesSection({ apiBaseUrl = import.meta.env.VITE_API_BASE_URL || "http://localhost:3000" }: WellWishesSectionProps) {
     const [notes, setNotes] = useState<Note[]>([]);
     const [loading, setLoading] = useState(true);
     const [showNoteModal, setShowNoteModal] = useState(false);
