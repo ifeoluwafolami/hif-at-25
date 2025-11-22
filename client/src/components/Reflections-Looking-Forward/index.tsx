@@ -101,7 +101,7 @@ export default function Reflections() {
 
         {/* Content Sections */}
         <div className="lg:hidden space-y-12 flex flex-col justify-center items-center">
-          {sections.map((section, index) => (
+          {sections.map((_section, index) => (
             <motion.div
               key={index}
               initial={{ opacity: 0, x: index % 2 === 0 ? -50 : 50 }}
@@ -157,7 +157,7 @@ export default function Reflections() {
 
             {/* Content Sections */}
             <div className="space-y-12 flex flex-col justify-center items-center">
-            {sections.map((section, index) => (
+            {sections.map((_section, index) => (
                 <motion.div
                 key={index}
                 initial={{ opacity: 0, x: index % 2 === 0 ? -50 : 50 }}

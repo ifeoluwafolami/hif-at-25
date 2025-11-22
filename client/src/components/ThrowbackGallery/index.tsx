@@ -150,7 +150,7 @@ export default function ThrowbackGallery() {
     const newRotations: RotationsState = {};
     
     rows.forEach((row, i) =>
-      row.forEach((col, j) => {
+      row.forEach((_col, j) => {
         const getRandom = (min: number, max: number): number =>
           Math.floor(Math.random() * (max - min + 1) + min);
         const centre = getCenter(i, j);
