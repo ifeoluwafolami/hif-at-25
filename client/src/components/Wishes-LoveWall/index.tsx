@@ -449,7 +449,7 @@ export default function WellWishesSection({ apiBaseUrl = import.meta.env.VITE_AP
                 const newNote = await submitNote(noteMessage, noteSignature);
                 setNotes(prev => [...prev, newNote]);
                 setEditingNote(newNote);
-                setEditTimeLeft(60);
+                setEditTimeLeft(10);
             }
             
             setShowNoteModal(false);
