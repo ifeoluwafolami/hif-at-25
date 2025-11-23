@@ -7,6 +7,8 @@ import PhotoshootGallery from "./components/PhotoshootGallery";
 import Reflections from "./components/Reflections-Looking-Forward";
 import { Globe, Heart, Mail, MessageCircle } from "lucide-react";
 import { ModalBody, ModalFooter, ModalFrame, ModalHead } from "./components/modal/Modal";
+import Cheers from "./components/Cheers";
+import FunFactsDisplay from "./components/FunFactsComponent";
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -16,7 +18,7 @@ function App() {
   useEffect(() => {
     const timer = setTimeout(() => {
       setLoading(false);
-    }, 10000);
+    }, 5000);
 
     return () => clearTimeout(timer);
   }, []);
@@ -76,9 +78,16 @@ function App() {
           <PhotoshootGallery />
         </div>
 
-        <div>
+        <FunFactsDisplay />
+
+        <div className="bg-[#e45781]">
           <Reflections />
         </div>
+        <div>
+          <Cheers />
+        </div>
+
+        
 
         {/* Footer */}
         <div className="bg-[#e45781] text-[#f5e4f1] w-full flex justify-center items-center h-20">

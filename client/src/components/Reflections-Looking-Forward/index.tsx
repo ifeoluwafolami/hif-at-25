@@ -37,7 +37,7 @@ export default function Reflections() {
   ];
 
   return (
-    <div className="min-h-screen font-rose overflow-x-hidden">
+    <div className=" font-rose overflow-x-hidden">
 
       <motion.div 
       style={{ opacity }}
@@ -51,7 +51,7 @@ export default function Reflections() {
           className="text-center mb-8"
         >
           <motion.h1 
-            className="font-priest text-4xl lg:text-6xl text-[#e45781] mb-4"
+            className="font-priest text-4xl lg:text-6xl text-[#f8f4f7] mb-4"
             animate={{ 
               scale: [1, 1.02, 1],
             }}
@@ -67,7 +67,7 @@ export default function Reflections() {
             initial={{ scaleX: 0 }}
             animate={{ scaleX: 1 }}
             transition={{ delay: 0.5, duration: 0.8 }}
-            className="h-1 w-32 bg-linear-to-r from-[#e45781] to-pink-300 mx-auto rounded-full"
+            className="h-1 w-32 bg-linear-to-r from-[#f8f4f7] to-pink-300 mx-auto rounded-full"
           /> */}
         </motion.div>
 
@@ -81,9 +81,9 @@ export default function Reflections() {
           <motion.div
             whileHover={{ scale: 1.02 }}
             transition={{ duration: 0.3 }}
-            className="relative rounded-3xl overflow-hidden shadow-2xl max-w-2xs mx-auto"
+            className="relative rounded-3xl overflow-hidden shadow-2xl max-w-2xs lg:max-w-sm mx-auto"
           >
-            {/* <div className="absolute inset-0 bg-linear-to-t from-[#e45781]/20 to-transparent z-10" /> */}
+            {/* <div className="absolute inset-0 bg-linear-to-t from-[#f8f4f7]/20 to-transparent z-10" /> */}
             <img 
               src="/birthdayshoot/If 10.jpg" 
               alt="Birthday Celebration"
@@ -94,7 +94,7 @@ export default function Reflections() {
               animate={{ rotate: [0, 5, -5, 0] }}
               transition={{ duration: 2, repeat: Infinity, delay: 1 }}
             >
-              <span className="font-priest text-2xl text-[#e45781]">25 🎉</span>
+              <span className="font-priest text-2xl text-[#f8f4f7]">25 🎉</span>
             </motion.div> */}
           </motion.div>
         </motion.div>
@@ -108,11 +108,11 @@ export default function Reflections() {
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true, margin: "-100px" }}
               transition={{ delay: index * 0.2, duration: 0.7 }}
-              className="px-8 md:px-12 max-w-xl lg:max-w-2xl border border-pink-100"
+              className="px-8 md:px-12 max-w-xl lg:max-w-2xl"
             >
               
               <motion.p 
-                className="text-[#e45781] text-lg md:text-xl leading-relaxed whitespace-pre-line text-justify"
+                className="text-[#f8f4f7] text-lg md:text-xl leading-relaxed whitespace-pre-line text-justify"
                 initial={{ opacity: 0 }}
                 whileInView={{ opacity: 1 }}
                 viewport={{ once: true }}
@@ -139,7 +139,7 @@ export default function Reflections() {
                 transition={{ duration: 0.3 }}
                 className="relative rounded-3xl overflow-hidden shadow-2xl max-w-2xs mx-auto"
             >
-                {/* <div className="absolute inset-0 bg-linear-to-t from-[#e45781]/20 to-transparent z-10" /> */}
+                {/* <div className="absolute inset-0 bg-linear-to-t from-[#f8f4f7]/20 to-transparent z-10" /> */}
                 <img 
                 src="/birthdayshoot/If 10.jpg" 
                 alt="Birthday Celebration"
@@ -150,13 +150,13 @@ export default function Reflections() {
                 animate={{ rotate: [0, 5, -5, 0] }}
                 transition={{ duration: 2, repeat: Infinity, delay: 1 }}
                 >
-                <span className="font-priest text-2xl text-[#e45781]">25 🎉</span>
+                <span className="font-priest text-2xl text-[#f8f4f7]">25 🎉</span>
                 </motion.div> */}
             </motion.div>
             </motion.div>
 
             {/* Content Sections */}
-            <div className="space-y-12 flex flex-col justify-center items-center">
+            <div className="space-y-12 flex flex-col justify-start items-center">
             {sections.map((_section, index) => (
                 <motion.div
                 key={index}
@@ -164,17 +164,17 @@ export default function Reflections() {
                 whileInView={{ opacity: 1, x: 0 }}
                 viewport={{ once: true, margin: "-100px" }}
                 transition={{ delay: index * 0.2, duration: 0.7 }}
-                className="px-8 md:px-12 max-w-xl lg:max-w-2xl border border-pink-100"
+                className="px-8 md:px-12 max-w-lg"
                 >
                 
                 <motion.p 
-                    className="text-[#e45781] text-lg md:text-xl leading-relaxed whitespace-pre-line text-justify"
+                    className="text-[#f8f4f7] text-lg md:text-xl leading-relaxed whitespace-pre-line text-justify"
                     initial={{ opacity: 0 }}
                     whileInView={{ opacity: 1 }}
                     viewport={{ once: true }}
                     transition={{ delay: 0.3 + index * 0.2 }}
                 >
-                    Twenty-five is going to be an extraordinary year, by God's grace. I'm stepping into it with lots of excitement and tons of hopeful expectations. <span className='block font-black underline underline-offset-2 mt-4 '>My checklist for this new chapter:</span>
+                    25 is going to be an extraordinary year, by God's grace. I'm stepping into it with lots of excitement and tons of hopeful expectations. <span className='block font-black underline underline-offset-2 mt-4 '>My checklist for this new chapter:</span>
                     
                     Working actively towards building a fulfilling career, trying new things that push me out of my comfort zone, and <span className='font-black italic'>(of course!)</span> taking over the world, one step at a time.
                 </motion.p>
@@ -185,7 +185,7 @@ export default function Reflections() {
         
 
         {/* Closing */}
-        <motion.div
+        {/* <motion.div
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
@@ -193,7 +193,7 @@ export default function Reflections() {
           className="text-center mt-16 space-y-6"
         >
           <motion.p 
-            className="font-priest text-5xl md:text-6xl text-[#e45781] leading-20"
+            className="font-priest text-5xl md:text-6xl text-[#f8f4f7] leading-20"
             animate={{ 
               textShadow: [
                 "0 0 10px rgba(228, 87, 129, 0.3)",
@@ -206,7 +206,7 @@ export default function Reflections() {
             Cheers to the birthday girl! 🥂🎉
           </motion.p>
           <motion.p 
-            className="text-[#e45781] text-xl md:text-2xl"
+            className="text-[#f8f4f7] text-xl md:text-2xl"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 0.5 }}
@@ -214,19 +214,19 @@ export default function Reflections() {
             See you this time next year! ❤
           </motion.p>
           <motion.p 
-            className="font-priest text-3xl md:text-4xl text-[#e45781] mt-4"
+            className="font-priest text-3xl md:text-4xl text-[#f8f4f7] mt-4"
             whileHover={{ scale: 1.1 }}
           >
             - H. I. Folami
           </motion.p>
-        </motion.div>
+        </motion.div> */}
 
         {/* Confetti effect */}
         {/* <div className="fixed inset-0 pointer-events-none">
           {[...Array(15)].map((_, i) => (
             <motion.div
               key={i}
-              className="absolute w-3 h-3 bg-[#e45781] rounded-full opacity-60"
+              className="absolute w-3 h-3 bg-[#f8f4f7] rounded-full opacity-60"
               initial={{ 
                 x: Math.random() * window.innerWidth, 
                 y: -20,
